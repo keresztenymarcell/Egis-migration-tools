@@ -72,6 +72,8 @@ def csv2xml():
                 if tags[i].find("location") != -1:
                     row[i] = row[i].replace('\\',':')
                     row[i] = row[i].replace('&','&amp;')
+                if tags[i] == "title":
+                    row[i] = row[i].replace('&','&amp;')
 
             for i in range(len(tags)):
                 if tags[i].find("mime") != -1:
