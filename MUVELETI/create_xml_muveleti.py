@@ -290,8 +290,13 @@ def csv2xml():
                                 
                             else:
                                 xmlData.write('\t\t' + '<' + tags[i] + ' name="'+tag_options[i]+'">' + row[i] + '</' + tags[i] + '>' + "\n")
+                                
                     elif(i == len(categories)-2):
                         xmlData.write('	</category>'+"\n")
+
+                    elif (len(row[i]) == 0): 
+                        if (categories[i] != categories[i+1]):
+                            xmlData.write('	</category>'+"\n")
 
 
                 elif tags[i].find("location") != -1:
