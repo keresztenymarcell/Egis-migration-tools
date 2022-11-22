@@ -11,7 +11,7 @@ excel_table = 'OpenText jogi ügykövető migráció feldolgozott_2022.11.14.xls
 sheet_name = 'migr'
 # sheet_name = 'WS3'
 csvFile = 'Muveleti_test.csv'
-xmlFile = 'Legal_test_20221116_ws_test.xml'
+xmlFile = 'Legal_test_20221116_ws_final.xml'
 
 def is_date(string, fuzzy=False):
     """
